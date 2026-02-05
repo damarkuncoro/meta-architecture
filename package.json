@@ -1,6 +1,6 @@
 {
   "name": "@damarkuncoro/meta-architecture",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "The Constitutional Layer for Digital Systems. Contracts are law. Everything must obey. Enterprise-grade Contract-Driven Meta Design (CDMD) kernel.",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
