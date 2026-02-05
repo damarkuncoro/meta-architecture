@@ -15,7 +15,7 @@ import { SchemaDefinitions } from './parts/definitions/SchemaDefinitions';
  */
 export const STANDARD_CONTRACT_SCHEMA: ContractDefinitionSchema = {
   $schema: 'http://json-schema.org/draft-07/schema#',
-  $id: 'https://sr-ui.dev/schemas/contract-definition.json',
+  $id: 'https://raw.githubusercontent.com/damarkuncoro/meta-architecture/main/src/schemas/contract-definition.json',
   title: 'Contract Definition',
   description: 'Schema for defining UI component contracts in the SR UI system',
   type: 'object',
