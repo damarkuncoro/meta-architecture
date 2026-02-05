@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./lib/esm",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./lib/esm"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["lib", "node_modules", "**/*.test.ts"]
+}

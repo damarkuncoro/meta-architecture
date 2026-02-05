@@ -1,0 +1,60 @@
+{
+  "name": "@damarkuncoro/meta-architecture",
+  "version": "2.0.3",
+  "description": "The Constitutional Layer for Digital Systems. Contracts are law. Everything must obey. Enterprise-grade Contract-Driven Meta Design (CDMD) kernel.",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/esm/index.d.ts",
+      "import": "./lib/esm/index.js",
+      "require": "./lib/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf lib dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm test && npm run clean && npm run build",
+    "release": "npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damarkuncoro/contract-architecture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/damarkuncoro/contract-architecture/issues"
+  },
+  "homepage": "https://github.com/damarkuncoro/contract-architecture#readme",
+  "keywords": [
+    "contract",
+    "architecture",
+    "clean-architecture",
+    "ddd",
+    "enterprise",
+    "typescript"
+  ],
+  "author": "DAMAR KUNCORO",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "eslint": "^9.39.2",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.17"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ]
+}
