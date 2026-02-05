@@ -29,12 +29,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damarkuncoro/contract-architecture.git"
+    "url": "git+https://github.com/damarkuncoro/meta-architecture.git"
   },
   "bugs": {
-    "url": "https://github.com/damarkuncoro/contract-architecture/issues"
+    "url": "https://github.com/damarkuncoro/meta-architecture/issues"
   },
-  "homepage": "https://github.com/damarkuncoro/contract-architecture#readme",
+  "homepage": "https://github.com/damarkuncoro/meta-architecture#readme",
   "keywords": [
     "contract",
     "architecture",
